@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.view.View
 import android.webkit.WebView
+import android.webkit.WebViewClient
 import android.widget.Button
 
 class WebviewActivity : AppCompatActivity() {
@@ -20,6 +21,12 @@ class WebviewActivity : AppCompatActivity() {
 
         //WebviewのURLを設定
         _webview = findViewById<View>(R.id.webviewInfo) as WebView
+        _webview.webViewClient = object : WebViewClient() {
+            override fun shouldOverrideUrlLoading(view: WebView?, url: String?): Boolean {
+                view?.loadUrl(url)
+                return true
+            }
+        }
         _webview.loadUrl(url)
 
         //ボタンの処理を登録する
