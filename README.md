@@ -14,10 +14,10 @@
 
 ## 動作環境
 
-* Android Studio ver. 3.1
-* Android OS ver. 6.0
-* Android SDK v3
-  - SDK v2系だと動作しないので注意
+* MacOS Monterey version 12.5
+* Android Studio Chipmunk | 2021.2.1 Patch 2
+* Pixel 2 - Android 13 (Simulator)
+* KotlinSDK v1.2.0
 
 ※上記内容で動作確認をしています。
 
@@ -79,7 +79,7 @@
 
 ### 4. Android Studioでアプリを起動
 
-* AndroidStudioを開いて、「Open an existing Android Studio project」から、ダウンロードして解凍したプロジェクトを選択します
+* AndroidStudioを開いて、「Open」から、ダウンロードして解凍したプロジェクトを選択します
 
 ![画像8-1](/readme-img/android_studio.png)
 
